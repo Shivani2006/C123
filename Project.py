@@ -20,7 +20,7 @@ y = pd.read_csv("labels.csv")["labels"]
 classes = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 nclasses = len(classes)
 
-x_train,x_test,y_train,y_test = train_test_split(X,y,train_size=7500, test_size=2500, random_state=9)
+x_train,x_test,y_train,y_test = train_test_split(X,y,train_size=3500, test_size=800, random_state=9)
 x_train_scale = x_train/255.0
 x_test_scale = x_test/255.0
 
